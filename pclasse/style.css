@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3a4249; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 100px; 
+}
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; 
+}
+input, textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.imagem {
+    margin-top: 10px; 
+    display: flex;
+    align-items: center;
+}
+.imagem img {
+    border-radius: 10px;
+    height: 500px;
+    margin-right: 25px; 
+    margin-top: 100px; 
+}
+
+#email:valid{
+    color: blue
+}
+
+#email:invalid{
+    color: red;
+}
+
+.faixa {
+    background-color: #262c31;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cor 10s infinite;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+button:active{
+    color: rgb(72, 72, 75);
+}
+    
+input:focus{
+    background-color: rgb(199, 196, 196);
+    border: 5px solid rgb(179, 179, 179);
+}
+
+button{
+    background-color:#28a745;
+}
+    
+button:hover{
+    background-color:#00a50b;
+}
+    
+@keyframes cor {
+
+    from { background-color: #262c31;; }
+    
+    to { background-color: rgb(48, 44, 44)}
+}
+
+h1{
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-weight: 1000;
+}
